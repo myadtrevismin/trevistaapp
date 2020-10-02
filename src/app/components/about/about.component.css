@@ -19,7 +19,7 @@
 
 .card-bg{
   background-repeat: no-repeat;
-  background-image: url("/assets/design.jpg"),url("/assets/design.jpg");
+  background-image: url("/trevistaapp/assets/design.jpg"),url("/trevistaapp/assets/design.jpg");
   background-attachment: fixed;
   background-position: left, right;
   background-size: 50%, 50%;
