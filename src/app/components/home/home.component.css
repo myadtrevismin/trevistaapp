@@ -3,7 +3,7 @@
 }
 
 .bg-img{
-    background-image: url('/trevistaapp/assets/home1.jpg');
+    background-image: url('/assets/home1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
