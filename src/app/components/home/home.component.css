@@ -1,0 +1,29 @@
+.home-height{
+    height: 300px;
+}
+
+.bg-img{
+    background-image: url('/assets/home1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.tv-innovate{
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.card-bg{
+    background-color: #285585;
+}
+
+h4{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+}

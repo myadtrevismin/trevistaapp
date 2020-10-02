@@ -1,0 +1,31 @@
+.about-margin{
+    margin: auto;
+    width: 80%;
+    border: 3px solid #1c9588;
+    padding: 10px;
+    text-align: center;
+    background-color: #1c9588;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+  .about-margin{
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+.card-bg{
+  background-repeat: no-repeat;
+  background-image: url("/assets/design.jpg"),url("/assets/design.jpg");
+  background-attachment: fixed;
+  background-position: left, right;
+  background-size: 50%, 50%;
+  height: 100%;
+}
+
+.container{
+  margin-bottom: 2rem;
+}

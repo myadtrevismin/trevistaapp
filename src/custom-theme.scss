@@ -1,0 +1,174 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$tvinnovations-primary: mat-palette($mat-indigo);
+$tvinnovations-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$tvinnovations-warn: mat-palette($mat-red);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-trevistaprimary: (
+    50 : #e8f1e4,
+    100 : #c5ddba,
+    200 : #9ec78d,
+    300 : #77b05f,
+    400 : #5a9f3c,
+    500 : #3d8e1a,
+    600 : #378617,
+    700 : #2f7b13,
+    800 : #27710f,
+    900 : #1a5f08,
+    A100 : #a2ff91,
+    A200 : #77ff5e,
+    A400 : #4cff2b,
+    A700 : #37ff12,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-trevistasecondary: (
+    50 : #e8eef4,
+    100 : #c5d5e3,
+    200 : #9fb9d0,
+    300 : #789cbd,
+    400 : #5b87af,
+    500 : #3e72a1,
+    600 : #386a99,
+    700 : #305f8f,
+    800 : #285585,
+    900 : #1b4274,
+    A100 : #afd0ff,
+    A200 : #7cb1ff,
+    A400 : #4993ff,
+    A700 : #3084ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$md-trevistasebg: (
+    50 : #e5f4f3,
+    100 : #bee4e1,
+    200 : #93d3cd,
+    300 : #67c1b8,
+    400 : #47b3a9,
+    500 : #26a69a,
+    600 : #229e92,
+    700 : #1c9588,
+    800 : #178b7e,
+    900 : #0d7b6c,
+    A100 : #adfff3,
+    A200 : #7affec,
+    A400 : #47ffe4,
+    A700 : #2dffe0,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-mcgpalette0: (
+    50 : #f3e0e0,
+    100 : #e0b3b3,
+    200 : #cc8080,
+    300 : #b84d4d,
+    400 : #a82626,
+    500 : #990000,
+    600 : #910000,
+    700 : #860000,
+    800 : #7c0000,
+    900 : #6b0000,
+    A100 : #ff9a9a,
+    A200 : #ff6767,
+    A400 : #ff3434,
+    A700 : #ff1a1a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$tvinnovations-theme: mat-light-theme((
+  color: (
+    primary: $md-trevistaprimary,
+    secondary: $md-trevistasecondary,
+    accent: $md-trevistasebg,
+    warn: $md-mcgpalette0,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($tvinnovations-theme);
+

@@ -1,4 +1,4 @@
-<ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+<!-- <ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
     <ng-template ngbSlide *ngFor="let img of images; index as i">
       <div class="carousel-caption">
         <h3>{{img.description}}</h3>
@@ -9,9 +9,13 @@
         </div>
       </a>
     </ng-template>
-</ngb-carousel>
-
-<div class="card-deck m-2">
+</ngb-carousel> -->
+<div class="container-fluid bg-img" >
+  <div>
+    <h2 class="tv-innovate">Trevista Innovations</h2>
+    <h4>Evolved Business solutions provider</h4>
+  </div>
+  <div class="card-deck m-4">
     <div class="card card-bg">
       <img class="card-img-top" src="assets/ss1.jpg" alt="Card image cap">
       <div class="card-body">
@@ -34,4 +38,7 @@
         <p class="card-text">Specialized B2B solution provider. We also deal with outsourcing of the projects.</p>
       </div>
     </div>
-  </div>
+</div>
+</div>
+
+

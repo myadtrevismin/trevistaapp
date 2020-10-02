@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-addressmap></app-addressmap>
+    </div>
+    <div class="col-md-6">
+      <div class="card shipping-card">
+        <div class="card-body">
+          <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng">
+              <agm-info-window >
+                <b>Trevista Innovations,</b> SREE RESIDENCY, behind Sarathi Studio,
+                Sai Sarathi Nagar, Yella Reddy Guda, Hyderabad, Telangana 500073
+              </agm-info-window>
+            </agm-marker>
+          </agm-map>
+          <div class="location">
+            <h4>Location:</h4>
+            <p>
+              SREE RESIDENCY, behind Sarathi Studio,
+              Sai Sarathi Nagar, Yella Reddy Guda, Hyderabad, Telangana 500073
+            </p>
+            <div><mat-icon>phone</mat-icon> +91 40-40154861</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

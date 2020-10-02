@@ -1,0 +1,16 @@
+agm-map {
+  height: 500px;
+}
+
+
+.shipping-card {
+  min-width: 120px;
+  margin: 20px auto;
+  background: transparent;
+}
+
+
+.location{
+  background-color: #ffffff;
+  padding: 1rem;
+}

@@ -6,8 +6,8 @@
   bottom: 0;
   width: 100%;
   /* background-color: #65CCB8; */
-  background-color: rgb(234, 216, 187);
-  color: rgb(25, 25, 25);
+  background-color: #77b05f;
+  color: #ffffff;
   text-align: center;
   padding: 2px 0px;
   z-index: 200;
@@ -30,4 +30,11 @@ body {
 .card-bg{
     background-color: rgb(108, 94, 73);
     color: #ffffff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family:  'Mada', sans-serif !important;  }
+
+.bg-bar{
+  background-color: #77b05f !important;
 }

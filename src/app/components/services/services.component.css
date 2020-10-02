@@ -1,0 +1,10 @@
+.pill-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.pill-list .badge{
+  margin: .25rem 2rem;
+}
